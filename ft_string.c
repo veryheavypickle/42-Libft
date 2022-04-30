@@ -6,13 +6,18 @@
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/30 20:46:57 by xcarroll          #+#    #+#             */
-/*   Updated: 2022/04/30 22:31:12 by xcarroll         ###   ########.fr       */
+/*   Updated: 2022/04/30 23:11:05 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_isalpha(void)
+/* This boy returns true if the inputted char is an alphanumeric */
+int	ft_isalpha(int c)
 {
-	printf("Test");
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	else if (c >= 'a' && c <= 'z')
+		return (1);
+	return (0);
 }

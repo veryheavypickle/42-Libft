@@ -6,7 +6,7 @@
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/30 20:43:56 by xcarroll          #+#    #+#             */
-/*   Updated: 2022/04/30 22:24:54 by xcarroll         ###   ########.fr       */
+/*   Updated: 2022/04/30 23:06:05 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@
 # include <ctype.h>
 # include <stdio.h>
 
+/* main.c */
+void	test_isalpha(void);
+
 /* ft_string.c */
-void	ft_isalpha(void);
+int		ft_isalpha(int c);
 #endif
