@@ -6,7 +6,7 @@
 #    By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/30 21:40:38 by xcarroll          #+#    #+#              #
-#    Updated: 2022/04/30 22:46:18 by xcarroll         ###   ########.fr        #
+#    Updated: 2022/05/01 01:18:47 by xcarroll         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,8 @@ RM = rm -f
 CFLAGS = -Wall -Wextra -Werror
 
 SRCS =	main.c \
-	ft_string.c
+	ft_isalpha.c \
+	ft_isdigit.c
 
 OBJS = $(SRCS:.c=.o)
 

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_string.c                                        :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/30 20:46:57 by xcarroll          #+#    #+#             */
-/*   Updated: 2022/04/30 23:11:05 by xcarroll         ###   ########.fr       */
+/*   Updated: 2022/05/01 01:19:27 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,26 @@
 /* This boy returns true if the inputted char is an alphanumeric */
 int	ft_isalpha(int c)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (1);
-	else if (c >= 'a' && c <= 'z')
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
 		return (1);
 	return (0);
 }
+
+/*
+void	test_isalpha(void)
+{
+	int	c;
+
+	c = 0;
+	while (c < 128)
+	{
+		if (isalpha(c) != ft_isalpha(c))
+		{
+			printf("Char: %c\n", c);
+			printf("isalpha: %i\n", isalpha(c));
+			printf("ft_isalpha: %i\n\n", ft_isalpha(c));
+		}
+		c++;
+	}
+}
+*/
