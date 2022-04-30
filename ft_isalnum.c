@@ -1,40 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/30 23:19:17 by xcarroll          #+#    #+#             */
-/*   Updated: 2022/05/01 01:23:09 by xcarroll         ###   ########.fr       */
+/*   Created: 2022/05/01 01:21:46 by xcarroll          #+#    #+#             */
+/*   Updated: 2022/05/01 01:22:34 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* This boy returns true if the inputted char is a digit */
-int	ft_isdigit(int c)
+/* This boy returns true if the inputted char is an alphanumeric */
+int	ft_isalnum(int c)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	return (0);
+	return (ft_isalpha(c) && ft_isdigit(c));
 }
-
-/*
-void	test_isdigit(void)
-{
-	int	c;
-
-	c = -1000;
-	while (c < 1000)
-	{
-		if (isdigit(c) != ft_isdigit(c))
-		{
-			printf("Char: %c\n", c);
-			printf("isalpha: %i\n", isdigit(c));
-			printf("ft_isalpha: %i\n\n", ft_isdigit(c));
-		}
-		c++;
-	}
-}
-*/
