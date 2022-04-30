@@ -6,13 +6,12 @@
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/30 23:19:17 by xcarroll          #+#    #+#             */
-/*   Updated: 2022/05/01 01:23:09 by xcarroll         ###   ########.fr       */
+/*   Updated: 2022/05/01 01:29:26 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* This boy returns true if the inputted char is a digit */
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
