@@ -6,7 +6,7 @@
 #    By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/30 21:40:38 by xcarroll          #+#    #+#              #
-#    Updated: 2022/05/01 01:34:27 by xcarroll         ###   ########.fr        #
+#    Updated: 2022/05/01 05:55:45 by xcarroll         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,12 @@ SRCS =	main.c \
 	ft_isdigit.c \
 	ft_isalnum.c \
 	ft_isascii.c \
-	ft_isprint.c
+	ft_isprint.c \
+	ft_strlen.c \
+	ft_strlcpy.c \
+	ft_strlcat.c \
+	ft_toupper.c \
+	ft_tolower.c \
 
 OBJS = $(SRCS:.c=.o)
 

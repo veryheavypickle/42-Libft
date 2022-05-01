@@ -6,7 +6,7 @@
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/01 03:24:14 by xcarroll          #+#    #+#             */
-/*   Updated: 2022/05/01 03:58:57 by xcarroll         ###   ########.fr       */
+/*   Updated: 2022/05/01 05:50:53 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	unsigned int	i;
 
 	i = 0;
-	if (ft_strlen(dest) < size || size == 0)
+	if ((unsigned int)ft_strlen(dest) < size || size == 0)
 		return (0);
 	while (src[i] != '\0' && i < size - 1)
 	{
@@ -25,5 +25,5 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 		i++;
 	}
 	dest[i] = '\0';
-	return (get_string_size(src));
+	return (ft_strlen(src));
 }
