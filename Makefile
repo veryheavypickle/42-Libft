@@ -6,7 +6,7 @@
 #    By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/30 21:40:38 by xcarroll          #+#    #+#              #
-#    Updated: 2022/05/01 05:55:45 by xcarroll         ###   ########.fr        #
+#    Updated: 2022/05/01 06:23:32 by xcarroll         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ OBJS = $(SRCS:.c=.o)
 	$(CC) $(CFLAGS) -c $< -o $(<:.c=.o) 
 	
 $(NAME): $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
+	ar crs $(NAME) $(OBJS)
 
 all: $(NAME)
 
