@@ -6,7 +6,7 @@
 #    By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/30 21:40:38 by xcarroll          #+#    #+#              #
-#    Updated: 2022/05/01 10:10:27 by xcarroll         ###   ########.fr        #
+#    Updated: 2022/05/02 17:03:41 by xcarroll         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,7 @@ SRCS =	main.c \
 	ft_strlcat.c \
 	ft_toupper.c \
 	ft_tolower.c \
+	ft_atoi.c
 
 OBJS = $(SRCS:.c=.o)
 

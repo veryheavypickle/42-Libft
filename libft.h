@@ -6,14 +6,16 @@
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/30 20:43:56 by xcarroll          #+#    #+#             */
-/*   Updated: 2022/05/02 16:17:50 by xcarroll         ###   ########.fr       */
+/*   Updated: 2022/05/02 18:49:37 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stdio.h>
+# include <stdlib.h>
 
+/* Part 1 */
 int				ft_isalpha(int c);
 int				ft_isdigit(int c);
 int				ft_isalnum(int c);
@@ -33,6 +35,6 @@ int				ft_strncmp(char *s1, char *s2, unsigned int n);
 /* memchr */
 /* memcmp */
 /* strnstr */
-/* atoi */
+int				ft_atoi(char *str);
 
 #endif
