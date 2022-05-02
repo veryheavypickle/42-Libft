@@ -6,7 +6,7 @@
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/01 01:35:17 by xcarroll          #+#    #+#             */
-/*   Updated: 2022/05/01 01:41:56 by xcarroll         ###   ########.fr       */
+/*   Updated: 2022/05/02 20:58:03 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 int	ft_strlen(char *str)
 {
-	int	i;
+	char	*s;
 
-	i = 0;
-	while (str[i] != 0)
-		i++;
-	return (i);
+	s = str;
+	while (*str)
+		str++;
+	return (str - s);
 }
