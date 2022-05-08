@@ -1,21 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/30 22:34:36 by xcarroll          #+#    #+#             */
-/*   Updated: 2022/05/08 20:33:22 by xcarroll         ###   ########.fr       */
+/*   Created: 2022/05/08 22:00:52 by xcarroll          #+#    #+#             */
+/*   Updated: 2022/05/08 22:04:23 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(int argc, char **argv)
+char	*ft_strnstr(char *str, char *to_find, size_t max)
 {
-	//printf("mine: %i\n", ft_atoi(argv[argc - 1]));
-	//printf("atoi: %i\n", atoi(argv[argc - 1]));
-	printf("hola caracola: %s", argv[argc - 1]);
+	int	i;
+	int	j;
+
+	i = 0;
+	j = 0;
+	if (to_find[j] == '\0')
+		return (str);
+	while (str[i] != '\0' && i >= (int)max)
+	{
+		while (str[i + j] == to_find[j] && str[i + j] != '\0')
+			j++;
+		if (to_find[j] == '\0')
+			return (str + i);
+		i++;
+		j = 0;
+	}
 	return (0);
 }

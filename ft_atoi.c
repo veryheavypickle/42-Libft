@@ -6,12 +6,13 @@
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 16:49:04 by xcarroll          #+#    #+#             */
-/*   Updated: 2022/05/02 19:44:28 by xcarroll         ###   ########.fr       */
+/*   Updated: 2022/05/08 20:45:04 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
 static int	ft_pow(int base, int exponent)
 {
 	int	result;
@@ -28,27 +29,30 @@ static int	ft_pow(int base, int exponent)
 	}
 	return (result);
 }
-
-static int	ft_char_to_int(char c)
-{
-	if (ft_isdigit(c))
-		return (c -= '0');
-	return (0);
-}
+*/
 
 int	ft_atoi(char *str)
 {
-	int	index;
-	int	len;
-	int	num;
+	int	i;
+	int	sign;
+	int	result;
 
-	num = 0;
-	len = ft_strlen(str);
-	index = 0;
-	while (index < len)
+	i = 0;
+	sign = 1;
+	result = 0;
+	while (str[i] == ' ')
+		i++;
+	while (str[i] == '-' || str[i] == '+')
 	{
-		num += ft_char_to_int(str[index]) * ft_pow(10, len - index - 1);
-		index++;
+		if (str[i] == '-')
+			sign = -sign;
+		i++;
 	}
-	return (num);
+	while (str[i] != '\0' && str[i] >= '0' && str[i] <= '9')
+	{
+		result *= 10;
+		result += str[i] - '0';
+		i++;
+	}
+	return (result * sign);
 }

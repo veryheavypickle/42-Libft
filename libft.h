@@ -6,7 +6,7 @@
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/30 20:43:56 by xcarroll          #+#    #+#             */
-/*   Updated: 2022/05/05 15:43:40 by xcarroll         ###   ########.fr       */
+/*   Updated: 2022/05/08 22:03:34 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int				ft_tolower(int c);
 int				ft_strncmp(char *s1, char *s2, unsigned int n);
 /* memchr */
 /* memcmp */
-/* strnstr */
+char			*ft_strnstr(char *str, char *to_find, size_t max);
 int				ft_atoi(char *str);
 
 #endif
