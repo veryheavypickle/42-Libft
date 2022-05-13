@@ -6,30 +6,11 @@
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 16:49:04 by xcarroll          #+#    #+#             */
-/*   Updated: 2022/05/13 22:56:34 by xcarroll         ###   ########.fr       */
+/*   Updated: 2022/05/13 22:57:48 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/*
-static int	ft_pow(int base, int exponent)
-{
-	int	result;
-	int	index;
-
-	if (!exponent)
-		return (1);
-	result = base;
-	index = 1;
-	while (index < exponent)
-	{
-		result *= base;
-		index++;
-	}
-	return (result);
-}
-*/
 
 int	ft_atoi(char *str)
 {
