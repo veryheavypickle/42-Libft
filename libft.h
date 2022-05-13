@@ -6,7 +6,7 @@
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/30 20:43:56 by xcarroll          #+#    #+#             */
-/*   Updated: 2022/05/08 22:03:34 by xcarroll         ###   ########.fr       */
+/*   Updated: 2022/05/13 20:53:07 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int				ft_strlen(char *str);
 /* memmove */
 /* unsigned int	ft_strlcat(char *dest, char *src, unsigned int size); */
 size_t			ft_strlcat(char *dest, const char *src, size_t size);
+/* size_t			ft_strlcat(char *dest, const char *src, size_t size); */
 int				ft_toupper(int c);
 int				ft_tolower(int c);
 /* strchr */
