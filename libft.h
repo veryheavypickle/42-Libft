@@ -33,7 +33,7 @@ int				ft_toupper(int c);
 int				ft_tolower(int c);
 /* strchr */
 /* strrchr */
-int				ft_strncmp(char *s1, char *s2, unsigned int n);
+int				ft_strncmp(char *s1, char *s2, size_t n);
 /* memchr */
 /* memcmp */
 char			*ft_strnstr(char *str, char *to_find, size_t max);
