@@ -21,7 +21,7 @@ int				ft_isdigit(int c);
 int				ft_isalnum(int c);
 int				ft_isascii(int c);
 int				ft_isprint(int c);
-int				ft_strlen(char *str);
+size_t	        ft_strlen(const char *s);
 /* memset */
 /* bzero */
 /* memcpy */
@@ -36,7 +36,7 @@ int				ft_tolower(int c);
 int				ft_strncmp(char *s1, char *s2, size_t n);
 /* memchr */
 /* memcmp */
-char			*ft_strnstr(char *str, char *to_find, size_t max);
+char	        *ft_strnstr(const char *str, const char *to_find, size_t max);
 int				ft_atoi(char *str);
 
 #endif
