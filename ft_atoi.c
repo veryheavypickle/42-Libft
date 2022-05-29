@@ -31,7 +31,7 @@ static int	ft_pow(int base, int exponent)
 }
 */
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	i;
 	int	sign;
@@ -46,7 +46,7 @@ int	ft_atoi(char *str)
 		sign = -sign;
 	if (str[i] == '-' || str[i] == '+')
 		i++;
-	while (str[i] != '\0' && str[i] >= '0' && str[i] <= '9')
+	while (str[i] && str[i] >= '0' && str[i] <= '9')
 	{
 		result *= 10;
 		result += str[i] - '0';
