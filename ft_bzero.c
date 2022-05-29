@@ -1,6 +1,9 @@
 #include "libft.h"
 
-void bzero(void *s, size_t n)
+void ft_bzero(void *s, size_t n)
 {
-    memset(s, 0, n);
+    char *str;
+    str = s;
+    while (n--)
+        *str++ = '\0';
 }

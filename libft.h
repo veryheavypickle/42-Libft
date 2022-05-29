@@ -22,19 +22,19 @@ int				ft_isalnum(int c);
 int				ft_isascii(int c);
 int				ft_isprint(int c);
 size_t	        ft_strlen(const char *s);
-void            *memset(void *b, int c, size_t len);
-void            bzero(void *s, size_t n);
-/* memmove */
+void            *ft_memset(void *b, int c, size_t len);
+void            ft_bzero(void *s, size_t n);
+/* ft_memmove */
 size_t			ft_strlcat(char *dest, const char *src, size_t size);
 int				ft_toupper(int c);
 int				ft_tolower(int c);
-/* strchr */
-/* strrchr */
+/* ft_strchr */
+/* ft_strrchr */
 int				ft_strncmp(char *s1, char *s2, size_t n);
-/* memchr */
-/* memcmp */
+/* ft_memchr */
+/* ft_memcmp */
 char	        *ft_strnstr(const char *str, const char *to_find, size_t max);
-int				ft_atoi(char *str);
+int				ft_atoi(const char *str);
 /* my malloc boys U+1F60E */
 void	        *ft_memcpy(void *dest_any, const void *src_any, size_t size);
 char	        *ft_strdup(const char *str);
