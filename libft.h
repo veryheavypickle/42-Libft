@@ -23,7 +23,7 @@ int				ft_isascii(int c);
 int				ft_isprint(int c);
 size_t	        ft_strlen(const char *s);
 void            *memset(void *b, int c, size_t len);
-/* bzero */
+void            bzero(void *s, size_t n);
 /* memmove */
 size_t			ft_strlcat(char *dest, const char *src, size_t size);
 int				ft_toupper(int c);
