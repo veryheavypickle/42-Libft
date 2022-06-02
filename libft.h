@@ -34,7 +34,7 @@ int				ft_tolower(int c);
 /* ft_strrchr */
 int				ft_strncmp(char *s1, char *s2, size_t n);
 void	        *ft_memchr(const void *s, int c, size_t n);
-/* ft_memcmp */
+int	            ft_memcmp(const void *s1, const void *s2, size_t n);
 char	        *ft_strnstr(const char *str, const char *to_find, size_t max);
 int				ft_atoi(const char *str);
 /* my malloc boys U+1F60E */
