@@ -6,7 +6,7 @@
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/08 22:00:52 by xcarroll          #+#    #+#             */
-/*   Updated: 2022/06/03 21:20:53 by xcarroll         ###   ########.fr       */
+/*   Updated: 2022/06/05 15:55:47 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,11 @@ char	*ft_strnstr(const char *str, const char *to_find, size_t max)
 	while (whole_text[i] != '\0')
 	{
 		j = 0;
-		while (whole_text[i + j] != '\0' && to_find[j] != '\0' && whole_text[i + j] == to_find[j] && i + j < max)
+		while (whole_text[i + j] && to_find[j] && whole_text[i + j] == to_find[j] && i + j < max)
 			j++;
 		if (j == len_str)
 			return (whole_text + i);
-        i++;
-    }
-    return (0);
+		i++;
+	}
+	return (0);
 }
