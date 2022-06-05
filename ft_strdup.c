@@ -6,7 +6,7 @@
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/05 15:52:34 by xcarroll          #+#    #+#             */
-/*   Updated: 2022/06/05 15:52:54 by xcarroll         ###   ########.fr       */
+/*   Updated: 2022/06/05 19:05:43 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,7 @@ char	*ft_strdup(const char *str)
 
 	len = ft_strlen(str);
 	cpy = (char *)malloc(sizeof(char) * ft_strlen(str) + 1);
-	return (ft_memcpy(cpy, str, len + 1));
+	if (cpy)
+		return (ft_memcpy(cpy, str, len + 1));
+	return (NULL);
 }
