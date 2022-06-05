@@ -5,3 +5,4 @@ en.subject.pdf
 *.out
 *.gch
 .idea/
+.vscode/
