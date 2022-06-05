@@ -6,7 +6,7 @@
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/30 20:43:56 by xcarroll          #+#    #+#             */
-/*   Updated: 2022/06/05 18:47:15 by xcarroll         ###   ########.fr       */
+/*   Updated: 2022/06/05 19:14:16 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,4 +41,16 @@ int		ft_atoi(const char *str);
 /* my malloc boys U+1F60E */
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *str);
+/* Part 2 */
+/* char *ft_substr(char const *s, unsigned int start, size_t len); */
+/* char *ft_strjoin(char const *s1, char const *s2); */
+/* char *ft_strtrim(char const *s1, char const *set); */
+/* char **ft_split(char const *s, char c); */
+char	*ft_itoa(int n);
+/* char *ft_strmapi(char const *s, char (*f)(unsigned int, char)); */
+/* void ft_striteri(char *s, void (*f)(unsigned int, char*)); */
+/* void ft_putchar_fd(char c, int fd); */
+/* void ft_putstr_fd(char *s, int fd); */
+/* void ft_putendl_fd(char *s, int fd); */
+/* void ft_putnbr_fd(int n, int fd); */
 #endif
