@@ -6,7 +6,7 @@
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/30 20:43:56 by xcarroll          #+#    #+#             */
-/*   Updated: 2022/06/03 20:57:20 by xcarroll         ###   ########.fr       */
+/*   Updated: 2022/06/05 16:31:17 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
-/* ft_strchr */
-/* ft_strrchr */
+char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(char *s1, char *s2, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
