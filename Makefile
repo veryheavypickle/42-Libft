@@ -42,7 +42,8 @@ SRCS =	main.c \
 	ft_atoi.c \
 	ft_calloc.c \
 	ft_strdup.c \
-	ft_itoa.c
+	ft_itoa.c \
+	ft_strmapi.c
 
 OBJS = $(SRCS:.c=.o)
 
