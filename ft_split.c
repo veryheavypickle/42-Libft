@@ -22,6 +22,7 @@ static	size_t ft_string_count(char const *s, char c)
 	{
 		if (s[i] == c)
 			count++;
+		i++;
 	}
 	return (count);
 }

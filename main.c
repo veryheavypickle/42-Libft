@@ -14,7 +14,7 @@
 
 int	main(int argc, char **argv)
 {
-	//printf("mine: %i\n", ft_atoi(argv[argc - 1]));
+	printf("mine: %i\n", ft_atoi(argv[argc - 1]));
 	//printf("atoi: %i\n", atoi(argv[argc - 1]));
 	int diff;
 	char *str;
@@ -22,9 +22,6 @@ int	main(int argc, char **argv)
 
 	str = "Hello";
 	c = 'e';
-	//
-	diff = (int)(ft_strchr(str, c) - str);
-	printf("%i\n", diff);
-	printf("%s\n", ft_substr(str + diff, 0, 10));
+	ft_split(str, c);
 	return (0);
 }
