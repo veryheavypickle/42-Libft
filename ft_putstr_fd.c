@@ -6,7 +6,7 @@
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 20:07:41 by xcarroll          #+#    #+#             */
-/*   Updated: 2022/07/05 20:07:41 by xcarroll         ###   ########.fr       */
+/*   Updated: 2022/07/05 20:16:46 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_putstr_fd(char *s, int fd)
 {
 	if (!s)
-		return;
+		return ;
 	while (*s)
 		write(fd, s++, 1);
 }

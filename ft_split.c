@@ -6,7 +6,7 @@
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 20:07:43 by xcarroll          #+#    #+#             */
-/*   Updated: 2022/07/05 20:07:44 by xcarroll         ###   ########.fr       */
+/*   Updated: 2022/07/05 20:16:01 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,8 @@ char **ft_split1(char const *s, char c)
 	current_string = (char *)s;
 	while (i < string_count)
 	{
-		current_string_size = (int)(ft_strchr(current_string, c) - current_string);
+		current_string_size = (int)(ft_st
+			rchr(current_string, c) - current_string);
 		printf("\n%i", current_string_size);
 		strings[i] = (char *)malloc(sizeof(char) * current_string_size + 1);
 		while (current_string_size > 0)
@@ -89,12 +90,15 @@ char **ft_split1(char const *s, char c)
  *
  *
  * strings = (char **)malloc(sizeof(char *) * (int)ft_string_count(s, c) + 1);
- * As norminette sucks ass for comments i will copy this whole line and paste it again just to explain wtf is going on
- * strings is a 2d array with a length of the number of characters 'c' found in 's' + 1
+ * As norminette sucks ass for comments i will copy this whole line and paste
+ * it again just to explain wtf is going on
+ * strings is a 2d array with a length of the
+ * number of characters 'c' found in 's' + 1
  */
 
 /*
-static void ft_yes(size_t size, char *str, char c, char **strings, size_t string_count)
+static void ft_yes(size_t size, char *str, char c,
+ char **strings, size_t string_count)
 {
 	size_t	i;
 
