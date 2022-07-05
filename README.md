@@ -9,6 +9,9 @@
                                                
 ```
 
+## Inspiration
+This was my inspiration for this project
+```
 Yo listen up here's a story
 About a little guy that lives in a blue world
 And all day and all night and everything he sees Is just blue
@@ -50,3 +53,4 @@ Da ba dee da ba daa, da ba dee da ba daa, da ba dee da ba daa
 I'm Blue da ba dee da ba daa
 Da ba dee da ba daa, da ba dee da ba daa, da ba dee da ba daa
 Da ba dee da ba daa, da ba dee da ba daa, da ba dee da ba daa
+```
