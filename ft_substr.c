@@ -1,8 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/07/05 20:10:13 by xcarroll          #+#    #+#             */
+/*   Updated: 2022/07/05 20:10:32 by xcarroll         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 /*
  * There are lots of similar variable names here so imma try explain it
- * I have about 5 hours of memory, so this helps me remember what the hell I wrote
+ * I have about 5 hours of memory, so this helps me remember what
+ * the hell I wrote
  *
  * len: is the maximum allowed length of the substring to be returned 'sub'.
  * len_s: is the length of string 's'
