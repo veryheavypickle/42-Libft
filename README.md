@@ -9,38 +9,44 @@
                                                
 ```
 
-aaaa
-
-TODO
-====
-ft_memset
-
-ft_bzero
-
-ft_memcpy
-
-ft_memmove
-
-ft_strlcat
-
-ft_toupper
-
-ft_tolower
-
-ft_strchr
-
-ft_strrchr
-
-ft_strncmp
-
-ft_memchr
-
-ft_memcmp
-
-ft_strnstr
-
-ft_atoi
-
-ft_calloc
-
-ft_strdup
+Yo listen up here's a story
+About a little guy that lives in a blue world
+And all day and all night and everything he sees Is just blue
+Like him inside and outside
+Blue his house with a blue little window
+And a blue Corvette
+And everything is blue for him
+And himself and everybody around
+'Cause he ain't got nobody to listen
+I'm Blue da ba dee da ba daa
+Da ba dee da ba daa, da ba dee da ba daa, da ba dee da ba daa
+Da ba dee da ba daa, da ba dee da ba daa, da ba dee da ba daa
+I'm Blue da ba dee da ba daa
+Da ba dee da ba daa, da ba dee da ba daa, da ba dee da ba daa
+Da ba dee da ba daa, da ba dee da ba daa, da ba dee da ba daa
+I have a blue house with a blue window
+Blue is the color of all that I wear
+Blue are the streets and all the trees are too
+I have a girlfriend and she is so blue
+Blue are the people here that walk around
+Blue like my Corvette, it's in and outside
+Blue are the words I say and what I think
+Blue are the feelings that live inside me
+I'm Blue da ba dee da ba daa
+Da ba dee da ba daa, da ba dee da ba daa, da ba dee da ba daa
+Da ba dee da ba daa, da ba dee da ba daa, da ba dee da ba daa
+I'm Blue da ba dee da ba daa
+Da ba dee da ba daa, da ba dee da ba daa, da ba dee da ba daa
+Da ba dee da ba daa, da ba dee da ba daa, da ba dee da ba daa
+Inside and outside
+Blue his house with a blue little window
+And a blue Corvette
+And everything is blue for him and himself
+And everybody around
+'Cause he ain't got nobody to listen
+I'm Blue da ba dee da ba daa
+Da ba dee da ba daa, da ba dee da ba daa, da ba dee da ba daa
+Da ba dee da ba daa, da ba dee da ba daa, da ba dee da ba daa
+I'm Blue da ba dee da ba daa
+Da ba dee da ba daa, da ba dee da ba daa, da ba dee da ba daa
+Da ba dee da ba daa, da ba dee da ba daa, da ba dee da ba daa
