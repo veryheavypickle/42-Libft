@@ -6,7 +6,7 @@
 /*   By: xcarroll <xcarroll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/02 16:49:04 by xcarroll          #+#    #+#             */
-/*   Updated: 2022/06/03 20:55:14 by xcarroll         ###   ########.fr       */
+/*   Updated: 2022/07/05 20:33:38 by xcarroll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,26 +31,32 @@ static int	ft_pow(int base, int exponent)
 }
 */
 
-int	ft_atoi(const char *str)
+static int	is_whitespace(int c)
 {
-	int	i;
-	int	sign;
-	int	result;
+	return (c == ' ' || (c >= '\t' && c <= '\r'));
+}
 
-	i = 0;
+int	ft_atoi(const char *nptr)
+{
+	long int	num;
+	int			sign;
+
+	num = 0;
 	sign = 1;
-	result = 0;
-	while (str[i] == ' ' || (str[i] >= '\t' && str[i] <= '\r'))
-		i++;
-	if (str[i] == '-')
-		sign = -sign;
-	if (str[i] == '-' || str[i] == '+')
-		i++;
-	while (str[i] && str[i] >= '0' && str[i] <= '9')
+	while (is_whitespace(*nptr))
+		nptr++;
+	if (*nptr == '-')
+		sign *= -1;
+	if (*nptr == '-' || *nptr == '+')
+		nptr++;
+	while (ft_isdigit(*nptr))
 	{
-		result *= 10;
-		result += str[i] - '0';
-		i++;
+		num = num * 10 + *nptr - '0';
+		if (num * sign < INT_MIN)
+			return (0);
+		else if (num * sign > INT_MAX)
+			return (-1);
+		nptr++;
 	}
-	return (result * sign);
+	return (num * sign);
 }
