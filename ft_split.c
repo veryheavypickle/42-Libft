@@ -11,6 +11,8 @@
  * This function calculates the num of strings that need to be returned
  * count is always +1 as there will always be at least one string.
  */
+
+/*
 static	size_t ft_string_count(char const *s, char c)
 {
 	size_t i;
@@ -26,11 +28,14 @@ static	size_t ft_string_count(char const *s, char c)
 	}
 	return (count);
 }
+*/
 
 /*
  * Aight, so the plan is to iterate through 's'
  * Everytime 'c' is found in 's', a new string is created
  */
+
+/*
 char **ft_split1(char const *s, char c)
 {
 
@@ -63,6 +68,7 @@ char **ft_split1(char const *s, char c)
 	}
 	return (strings);
 }
+ */
 
 /*
  * 'strings' is the 2d array to return
